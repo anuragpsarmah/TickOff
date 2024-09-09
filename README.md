@@ -4,7 +4,7 @@ TickOff is a completely ordinary To-DO application built using MERN stack. It pr
 
 # Setting up TickOff
 
-Below are the instructions to setup Silhouette locally.
+Below are the instructions to setup TickOff locally.
 
 ## Prerequisites
 
