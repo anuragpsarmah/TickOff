@@ -82,10 +82,12 @@ const loginUser = async (req, res) => {
             .cookie("accessToken", accessToken, {
                 httpOnly: true,
                 secure: true,
+                sameSite: "None",
             })
             .cookie("refreshToken", refreshToken, {
                 httpOnly: true,
                 secure: true,
+                sameSite: "None",
             })
             .json({
                 message: "User logged in successfully",
@@ -119,10 +121,12 @@ const logout = async (req, res) => {
             .cookie("accessToken", "", {
                 httpOnly: true,
                 secure: true,
+                sameSite: "None",
             })
             .cookie("refreshToken", "", {
                 httpOnly: true,
                 secure: true,
+                sameSite: "None",
             })
             .json({
                 message: "User logged in successfully",

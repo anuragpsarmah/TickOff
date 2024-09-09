@@ -50,10 +50,12 @@ const newAccessToken = async (req, res) => {
             .cookie("accessToken", newAccessToken, {
                 httpOnly: true,
                 secure: true,
+                sameSite: "None",
             })
             .cookie("refreshToken", newRefreshToken, {
                 httpOnly: true,
                 secure: true,
+                sameSite: "None",
             })
             .json({
                 message: "User authorized successfully",
