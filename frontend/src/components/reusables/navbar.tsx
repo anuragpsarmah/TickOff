@@ -47,6 +47,11 @@ export default function Navbar({ className = "" }: NavbarProps) {
         >
             <button
                 onClick={() => {
+                    setCurrentUserState({
+                        userid: "",
+                        username: "",
+                        email: "",
+                    });
                     navigate("/");
                 }}
                 className="flex flex-row justify-center items-center hidden lg:flex"
