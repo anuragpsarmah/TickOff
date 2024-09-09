@@ -3,6 +3,7 @@ import { response } from "../utils/response.util.js";
 
 export const authValidation = async (req, res, next) => {
     const accessToken = req.cookies.accessToken;
+    console.log(accessToken);
 
     if (!accessToken) return response(res, 401, "Unauthorized Access");
 
