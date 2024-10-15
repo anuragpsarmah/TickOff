@@ -8,7 +8,7 @@ Below are the instructions to setup TickOff locally.
 
 ## Prerequisites
 
-Node.js and NPM must be installed on the system.
+Node.js, NPM and Python must be installed on the system.
 
 ## Cloning the Repository
 
@@ -19,7 +19,7 @@ cd TickOff
 
 ## Configurations
 
-**Backend Environment File**: Navigate to the backend folder and create `.env` file. Add the following content to the file:
+**Backend Environment File**: Navigate to the backend folders and create `.env` file. Add the following content to the file:
 
     PORT=
     MONGODB_URI=
@@ -36,10 +36,17 @@ cd TickOff
 
 ## Running the Application
 
-**Backend:**
+**BackendNodeJS:**
 
   - Navigate to the backend directory.
   - Install dependencies: `npm install`.
+  - Start the application: `npm run dev`.
+
+**BackendPython:**
+
+  - Navigate to the backend directory.
+  - Setup virtual environment: `python -m venv venv`, `venv\Scripts\activate`.
+  - Install dependencies: `pip install -r requirements.txt`.
   - Start the application: `npm run dev`.
 
 **Frontend:**
