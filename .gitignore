@@ -1,7 +1,10 @@
-backend/.env
-backend/node_modules
-backend/.prettier*
+backendNodeJS/.env
+backendNodeJS/node_modules
+backendNodeJS/.prettier*
 
 frontend/.env
 frontend/node_modules
 backend/.prettier*
+
+backendFlask/venv
+backendFlask/.env*

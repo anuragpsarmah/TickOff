@@ -1,0 +1,2 @@
+DB_NAME = "TODO"
+DB_RETRIES = 3
